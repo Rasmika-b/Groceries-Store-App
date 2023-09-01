@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ android:orientation="vertical">
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="120dp" >
+ <androidx.cardview.widget.CardView
+ android:id="@+id/cardview"
+ android:layout_width="80dp"
+ android:layout_height="80dp"
+ android:layout_marginTop="20dp"
+ android:layout_marginLeft="20dp">
+ <ImageView
+ android:layout_width="80dp"
+ android:layout_height="80dp"
+ android:scaleType="centerCrop"
+ android:id="@+id/imageview"
+ android:src="@drawable/tomato"/>
+ </androidx.cardview.widget.CardView>
+ <TextView
+ android:id="@+id/textview"
+ android:layout_width="200dp"
+ android:layout_height="30dp"
+ android:layout_marginLeft="20dp"
+ android:layout_marginTop="40dp"
+ android:layout_toRightOf="@+id/imageview"
+ android:text="Subject"
+ android:textSize="20sp" />
+ </LinearLayout>
+ <TableRow
+ android:layout_width="match_parent"
+ android:layout_height="0.5dp"
+ android:background="#322E2E" />
+</LinearLayout>
